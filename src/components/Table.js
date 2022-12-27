@@ -32,7 +32,7 @@ export default function Table() {
   const getData = async () => {
     setLoad(true);
     const response = await Axios.get(
-      `http://go-dev.greedygame.com/v3/dummy/report?startDate=${startDate}&endDate=${endDate}`
+      `https://go-dev.greedygame.com/v3/dummy/report?startDate=${startDate}&endDate=${endDate}`
     );
     formatData(response.data.data);
     setLoad(false);
